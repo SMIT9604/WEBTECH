@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center><mark>Student Registration Form</mark></center></h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="">First Name:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email:</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone Number:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth:</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender:</label></td>
+                    <td><input type="radio" name="gender">Male</td>
+                    <td><input type="radio" name="gender">Female</td>
+                </tr>
+            </table>
+        </form><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Academics information</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="">Select Course:</label></td>
+                    <td><select name="" id="">
+                        <option value="" selected disabled>--Select a Course--</option>
+                         <optgroup label="Full Stack">
+            <option value="">Python Full Stack</option>
+            <option value="">Java Full Stack</option>
+        </optgroup>
+        <optgroup label="Testing">
+            <option value="">Manual testing</option>
+            <option value="">Auto Testing</option>
+        </optgroup>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Skills:</label></td>
+                    <td><input type="text" placeholder="Select or type a skill" list="course" multiple>
+                    <datalist id="course" >
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JS">JS</option>
+                        <option value="React">React JS</option>
+                    </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="">Address:</label></td>
+                    <td><textarea name="" id="" cols="40" rows="5"></textarea></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Login Credentials</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="">Username:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm Password:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Declaration</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox"> I agree to the Terms & Conditions
+                    </td>
+                </tr>
+                <tr>
+                    <td><center>
+                        <button>Register</button>
+                <button>Reset</button>
+                    </center>
+                        
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
