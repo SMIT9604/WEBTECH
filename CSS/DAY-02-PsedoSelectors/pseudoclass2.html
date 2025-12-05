@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{
+            background-color: green;
+            border:5px solid lightblue ;
+
+        }
+        input:disabled{
+            background-color: red;
+            color: black;
+        }
+        input:checked{
+            background-color: brown;
+            accent-color:green ;
+        }
+        button:hover{
+            background-color: green;
+        }
+        button{
+            background-color: Red;
+        }
+    </style>
+</head>
+<body>
+    <label for="">
+       Enter Your Name As Per Pan Card
+    </label>
+     <input type="text"><br><br>
+     <label for="">PAN CARD NO</label>
+     <input type="text" disabled value="PAN123"><br><br>
+     <label for="">Food:</label>
+     <label for="burger">
+        <input type="checkbox" id="burger">Burger
+     </label>
+       <label for="pizza">
+        <input type="checkbox" id="pizza">Pizza
+     </label>
+       <label for="coke">
+        <input type="checkbox" id="coke" checked>Coke
+     </label><br><br>
+     <label for="">
+        <input type="checkbox" checked>Terms and condition Applied
+     </label>
+     <button>Next</button>
+     
+</body>
+</html>
