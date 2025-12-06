@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para1::first-letter{
+            color: red;
+        }
+        #para2::first-line{
+            color: brown;
+        }
+        #para3::after{
+            color: aqua;
+            content: "End";
+        }
+        #para3::before{
+            color: aqua;
+            content:"Start" ;
+        }
+        input::placeholder{
+            color: black;
+        }
+        #para3::selection{
+            color: white;
+            background-color: black;
+        }
+        input{
+            caret-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Element Selector</h1>
+    <p id="para1">This is example of first letter pseudo element selectors</p>
+    <p id="para2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, recusandae expedita quisquam vero, nobis incidunt odio iure sequi ea, magni consequuntur! Cumque ut id repudiandae harum quas reprehenderit, dolor voluptatibus.
+    </p>
+    <p id="para3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laboriosam atque voluptatibus itaque fugit illo iste blanditiis. Aspernatur vitae porro quae repellendus cum ab, sequi, rerum nisi culpa totam harum.
+    </p>
+    <input type="text" placeholder="Enter your name">
+</body>
+</html>
