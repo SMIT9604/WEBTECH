@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 100px;
+            border: 3px dashed black;
+            margin: 3px auto;
+            padding: 25px;
+            background-image: url(https://tse4.mm.bing.net/th/id/OIP.zTMJCSXZBT1OSKi9SO_KPQHaEo?pid=Api&P=0&h=180);
+            background-repeat:no-repeat ;
+            text-decoration-color: antiquewhite;
+        }
+        #box1{
+            background-origin: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>background-origin Property in class</h1>
+    <div class="box" id="box1">
+      <h2>background-origin: border-box;</h2>
+    </div>
+    <div class="box" id="box2">
+      <h2>background-origin: padding-box;</h2>
+    </div>
+    <div class="box" id="box3">
+      <h2>background-origin: content-box;</h2>
+    </div>
+</body>
+</html>

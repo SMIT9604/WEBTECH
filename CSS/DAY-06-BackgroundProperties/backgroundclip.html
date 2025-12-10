@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 150px;
+            background-color: orange;
+            border: 2px dashed;
+            margin:30px auto;
+            padding: 25px;
+        }
+        #box1{
+            background-clip: border-box;
+        }
+        #box2{
+            background-clip: content-box;
+        }
+        #box3{
+            background-clip: padding-box;
+        }
+        #ok{
+            background-image: linear-gradient(blue , red);
+            background-clip: text;
+            background-position: center;
+            font-size: 60px;
+            color: transparent;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>background-origin Property in class</h1>
+    <div class="box" id="box1">
+      <h2>background-origin: border-box;</h2>
+    </div>
+    <div class="box" id="box2">
+      <h2>background-origin: padding-box;</h2>
+    </div>
+    <div class="box" id="box3">
+      <h2>background-origin: content-box;</h2>
+    </div>
+    <h1 id="ok">Smit Patel</h1>
+</body>
+</html>
