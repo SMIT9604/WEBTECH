@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+
+    #mainsection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px;
+        background-color: rgb(27, 26, 26);
+    }
+
+    #left-sect{
+        display: flex;
+        
+    }
+    #leftcontain{
+         margin-right: 20px;
+        padding-top: 15vh;
+        padding-bottom: 25vh;
+        padding-left: 10%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: wheat;
+       box-shadow: 5px 5px rgba(230,230,42,0.6);
+    }
+
+    #right-sect{
+        width: 50%;
+        height: 100%;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(37, 36, 36);
+        display: grid;
+        padding: 20px;
+        gap: 5px;
+        grid-template-areas: "mountain mountain ocean ocean"
+                             "mountain mountain ocean ocean"
+                             "waterfall island hills beach"
+                             "waterfall island forest forest"
+                             "waterfall rain forest forest"
+                             "desert volcano iceberg land";
+    }
+
+    .grid-item{
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #grid-item1{
+        grid-area: mountain;
+        background-image: url(https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?cs=srgb&dl=autumn-beautiful-city-210243.jpg&fm=jpg);
+    }
+    #grid-item2{
+        grid-area: ocean;
+        background-image: url(https://wallpapercave.com/wp/wp4312096.jpg);
+    }
+    #grid-item3{
+        grid-area: waterfall;
+        background-image: url(https://tse2.mm.bing.net/th/id/OIP.rgfQb2BZq0zZtS96AYocsQHaE8?pid=Api&P=0&h=180);
+    }
+    #grid-item4{
+        grid-area: island;
+        background-image: url(https://i.redd.it/yt959h5qlwb21.jpg);
+    }
+    #grid-item5{
+        grid-area: hills;
+        background-image: url(https://images.pexels.com/photos/1287089/pexels-photo-1287089.jpeg?cs=srgb&dl=pexels-eberhardgross-1287089.jpg&fm=jpg);
+    }
+    #grid-item6{
+        grid-area: beach;
+        background-image: url(https://media.macphun.com/img/uploads/customer/blog/1352/15536061335c9a25f544b3c4.68252837.jpg?q=85&w=1680);
+    }
+    #grid-item7{
+        grid-area: rain;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/029/771/613/large_2x/epicgraphy-shot-of-rainy-season-background-enjoying-nature-rainfall-and-happy-life-concept-generative-ai-free-photo.jpeg);
+    }
+    #grid-item8{
+        grid-area: forest;
+        background-image: url(https://images.pexels.com/photos/1125776/pexels-photo-1125776.jpeg?cs=srgb&dl=forest-grass-green-1125776.jpg&fm=jpg);
+    }
+    #grid-item9{
+        grid-area: desert;
+        background-image: url(https://images8.alphacoders.com/790/790910.jpg);
+    }
+    #grid-item10{
+        grid-area: volcano;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/023/291/715/large_2x/the-volcanic-eruption-with-ai-generated-free-photo.jpg);
+    }
+    #grid-item11{
+        grid-area: iceberg;
+        background-image: url(https://www.goodfreephotos.com/albums/antarctica/iceberg-in-antarctica.jpg);
+    }
+    #grid-item12{
+        grid-area: land;
+        background-image: url(https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    }
+    h1{
+        font-size: 60px;
+    }
+    
+
+</style>
+
+<body>
+
+    <section id="mainsection">
+
+        <section id="left-sect">
+            <div id="leftcontain">
+                <h1>Nature's Gallery</h1>
+                <br>
+                <br>
+                <h3>🌸Everything in this world is beutiful</h3>
+                <h3>🌸You just need to look closer</h3>
+                <h3>🌸Capture the moment📸</h3>
+                <br>
+                
+                <h4>Follow for more->@ <i>natures_gallery</i></h4>
+            </div>
+        </section>
+
+        <section id="right-sect">
+
+            <div class="parent">
+                <div class="grid-item" id="grid-item1">Mountain</div>
+                <div class="grid-item" id="grid-item2">Oceans</div>
+                <div class="grid-item" id="grid-item3">Waterfalls</div>
+                <div class="grid-item" id="grid-item4">Island</div>
+                <div class="grid-item" id="grid-item5">Hills</div>
+                <div class="grid-item" id="grid-item6">Beach</div>
+                <div class="grid-item" id="grid-item7">Rain</div>
+                <div class="grid-item" id="grid-item8">Forest</div>
+                <div class="grid-item" id="grid-item9">Desert</div>
+                <div class="grid-item" id="grid-item10">Volcano</div>
+                <div class="grid-item" id="grid-item11">Iceberg</div>
+                <div class="grid-item" id="grid-item12">Land</div>
+            </div>
+
+        </section>
+    </section>
+    
+</body>
+</html>

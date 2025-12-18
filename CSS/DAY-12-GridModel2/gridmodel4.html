@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            padding: 20px;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            justify-content:center ;
+            background-color: black;
+            color: wheat;
+            border: 2px solid wheat;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 10px;
+        }
+        .child{
+           
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        background-color:brown;
+        }
+        #item2{
+            align-self: start;
+        }
+        #item3{
+            justify-self: start;
+        }
+        #item4{
+            align-self: center;
+            justify-self: center;
+        }
+        #item5{
+            justify-self: end;
+            
+        }
+        #item6{
+            align-self: flex-end;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="item1">stretch</div>
+        <div class="child" id="item2"> align-item-start</div>
+        <div class="child" id="item3">justify-self-start</div>
+        <div class="child" id="item4">center(align-justify)</div>
+        <div class="child" id="item5">justify-self-end</div>
+        <div class="child" id="item6">end-align-self</div>
+    </div>
+</body>
+</html>
