@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+           background-image:url(http://wallpapercave.com/wp/bJXzKDx.jpg) ;
+            color: wheat;
+            
+        }
+        .earth{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            margin: 50px auto;
+            background-image: url(https://images.pexels.com/photos/2422/sky-earth-galaxy-universe.jpg?cs=srgb&dl=astronomy-discovery-earth-2422.jpg&fm=jpg);
+            background-size: 130%;
+            background-position: center;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            margin-left: calc(50% - 200px);
+            margin-top: 150px;
+            animation: rotatemoon 4s linear infinite;
+        }
+        .moon{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url(https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/5708027/910/923/m2/fpnw/wm1/full_moon_screenshot-.jpg?1547590227&s=7fae338bfef014b8847cbf176fb48270);
+            background-size: cover;
+            background-position: center;
+            
+            margin: 50px auto;
+            transform: translate(100px,-80px);
+
+        }
+        .moon-orbit{
+            height: 700px;
+            width: 700px;
+            margin: 50px auto;
+            border-radius: 50%;
+            animation: rotatemoon 4s linear infinite;
+            
+        }
+       
+        @keyframes rotatemoon{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Earth and Moon Rotating using Animations in CSS</h1>
+        <div class="orbit">
+            <div class="earth"></div>
+                <div class="moon-orbit">
+                    <div class="moon"></div>
+            </div>
+        </div>
+</body>
+</html>
