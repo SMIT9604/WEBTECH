@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Text</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+        }
+        p{
+            color: white;
+            font-size: 4dvh;
+            animation: movingText 5s linear infinite;
+        }
+        @keyframes movingText {
+            from{
+                transform: translate(400%);
+            }
+            to{
+                transform: translate(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Moving Text Using Aimations in CSS</h1>
+    <div class="container">
+        <p >🚀This is a moving a text🚀</p>
+    </div>
+</body>
+</html>

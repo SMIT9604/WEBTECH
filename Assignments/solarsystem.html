@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .space{
+            width: 100%;
+            height: 200vh;
+            border: 2px solid wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sun{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-image: url(https://static.dezeen.com/uploads/2020/06/nasa-time-lapse-sun_dezeen_1704_col_0.jpg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+        }
+        .mercury-orbit{
+            width: 380px;
+            height: 380px;
+            border: 2px solid red;
+            border-radius: 50%;
+            position: absolute;
+            animation: rotate 4s linear infinite ;
+
+
+        }
+        .mercury{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translate(35px,20px);
+            background-image: url(https://solarsystem.nasa.gov/system/stellar_items/image_files/2_feature_1600x900_mercury.jpg);
+            background-size: -110%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /* VENUS*/
+        .venus-orbit{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            border-radius: 50%;
+            position: absolute;
+              animation: rotate 6s linear infinite ;
+
+
+        }
+        .venus{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            transform: translate(35px,20px);
+            background-image: url(http://d1jqu7g1y74ds1.cloudfront.net/wp-content/uploads/2012/04/Venus-imaged-by-Magellan.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        /*Earth */
+        .earth-orbit{
+            width: 650px;
+            height: 650px;
+            border: 2px solid red;
+            border-radius: 50%;
+            position: absolute;
+            animation: rotate 8s linear infinite ;
+
+        }
+        .earth{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transform: translate(-25px,200px);
+            background-image: url(https://eoimages.gsfc.nasa.gov/images/imagerecords/0/885/modis_wonderglobe_lrg.jpg);
+            background-size: 115%;
+            background-position: center;
+        }
+        .mars-orbit{
+            width: 850px;
+            height: 850px;
+            border: 2px solid red;
+            border-radius: 50%;
+            position: absolute;
+             animation: rotate 10s linear infinite ;
+
+        }
+        .mars{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translate(200px,20px);
+            background-image: url(https://solarsystem.nasa.gov/internal_resources/3841);
+            background-size: 105%;
+            background-position: center;
+        }
+        .jupiter-orbit{
+            width: 1000px;
+            height: 1000px;
+            border: 2px solid red;
+            border-radius: 50%;
+              animation: rotate 12s linear infinite ;
+
+
+        }
+        .jupiter{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transform: translate(60px,40px);
+            background-image: url(https://i.pinimg.com/736x/89/45/a1/8945a185a538962f3d1cbc35ec1c7e72.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="space">
+        <div class="sun"></div>
+        <div class="mercury-orbit">
+            <div class="mercury"></div>
+        </div>
+        <div class="venus-orbit">
+            <div class="venus"></div>
+        </div>
+        <div class="earth-orbit">
+            <div class="earth"></div>
+        </div>
+        <div class="mars-orbit">
+            <div class="mars"></div>
+        </div>
+        <div class="jupiter-orbit">
+            <div class="jupiter"></div>
+        </div>
+        <div class="saturn-orbit">
+            <div class="saturn"></div>
+        </div>
+        <div class="uranus-orbit">
+            <div class="uranus"></div>
+        </div>
+        <div class="neptune-orbit">
+            <div class="neptune"></div>
+        </div>
+    </div>
+</body>
+</html>

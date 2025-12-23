@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing balls</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .spinner-container{
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;  
+        }
+        .spinner{
+            width:150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 10px solid white;
+            border-right:10px solid red ;
+            animation: spinner 2s linear infinite;
+            
+        }
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        @keyframes spinner {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+        Loading....
+    </div>
+</body>
+</html>
