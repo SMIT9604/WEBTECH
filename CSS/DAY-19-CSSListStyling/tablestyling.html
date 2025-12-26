@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+    <style>
+        table{
+            width: 15%;
+            margin: 10px auto;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-collapse:collapse ;
+            
+        }
+        td{
+            border: 1px solid blue;
+            
+        }
+        tr:hover{
+            background-color: lightblue;
+        }
+        td:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>IPL Opening Pairs</caption>
+        <tr>
+            <td>Shubman Gill</td>
+            <td>Sai Sudarshan</td>
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td>Phill Salt</td>
+        </tr>
+        <tr>
+            <td>Travis Head</td>
+            <td>Abhishek Sharma</td>
+        </tr>
+    </table>
+</body>
+</html>
