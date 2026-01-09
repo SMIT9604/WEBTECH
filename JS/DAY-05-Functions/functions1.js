@@ -26,3 +26,23 @@ function greetPerson(name,name2){
     console.log(`Greetings from ${name} and ${name2}`);
 }
 greetPerson("Smit","Meet")
+
+//! Return Keyword or statement in functon
+//* The return statement is used to return a value from a function.
+
+function sum(a,b){
+    return a+b;
+}
+
+//! !st way:
+//? If the function is returning any values to the function call statment and if you want to access that value then you need to store that returned value inside a variable.
+
+let result = sum(10,20);
+console.log(result);
+
+//! 2nd way:
+//? You can also directly use the function call statement inside the console.log() to print the returned value.
+console.log(sum(30,40));
+
+
+
