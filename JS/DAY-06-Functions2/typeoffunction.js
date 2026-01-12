@@ -7,9 +7,9 @@
 //* 4. Arrow Function
 //* 5. IIFE (Immediately Invoked Function Expression)
 //* 6. Callback Function
-//* 7. Recursive Function
+//* 7. Nestwd Function
 //* 8. Generator Function
-//* 9. Async Function
+//* 9. Higher Order Functio(HOF)
 //* 10. Constructor Function
 //* 11. Function Currying
 
@@ -75,5 +75,133 @@ let add =(num1,num2) => {
 console.log(add)
 add(10,20)
 console.log(add(30,50));
+
+//~ NOTE: Arrow function dont have their arguments objects.
+
+//! Implicit Return:
+//* It means if we have only one statement in the function then we can remove the curly braces and return keyword.
+
+let add1=(num1,num2)=> num1 + num2; 
+//Internally it will be like this:
+// let add1=(num1,num2)=> {return num1 + num2};
+console.log(add1(10,20));
+
+let a,b=(10,20,30);
+console.log(a); // undefined
+console.log(b); // 30
+// Because comma operator returns the last value
+
+//! Explicit Return:
+//* If there are multiple statements in the function then we need to use curly braces and return keyword.
+
+// If you are mentioning the return keyword manually then you need to use curly braces.
+
+let expplicitFunc =() =>{
+    console.log("First Statement");
+    console.log('Second Statement');
+    return "Return Statement";
+}
+console.log(expplicitFunc());
+
+//! 6.Callback Function:
+//* A function which is passed as an argument to another function is called callback function.
+
+function orderFood(waiter){
+    console.log(`👩‍🍳:Sir What you want
+        1. Pizza
+        2. Burger
+        3. Pasta`);
+    waiter();
+}
+orderFood(serveFood);
+orderFood(reviewFood);
+
+function serveFood(){
+    console.log("👨‍🍳:Sir I will serve you the food");
+}
+
+function reviewFood(){
+    console.log("Food was delicious");
+}
+
+document.getElementById("serve").addEventListener("click", function() {
+    orderFood(serveFood);
+});
+
+document.getElementById("review").addEventListener("click", function() {
+    orderFood(reviewFood);
+});
+
+function sir (studentName,callback){
+    console.log("Sir,is checking papers");
+
+setTimeout(()=>{
+    console.log('Papers are checked');
+    console.log(`Result for ${studentName}:`);
+    callback()
+},3000);
+}
+
+//~CallBack Function
+function result(){
+console.log("PASS✅")
+}
+
+sir("Smit",result)
+
+function demo(){
+console.log("Hello World")
+}
+demo()
+//todo 2nd Way
+//? Directly mention the callback function inside the main fucntion
+
+//! 7. Higher Order Function
+
+//*A function which will accept another fucntion as an argument or it will return another function is called as Higher Order Function.
+
+function calculate(num1,num2,operation){
+    return operation(num1,num2);
+}
+
+function add2(num1,num2){
+    return num1 + num2;
+}
+console.log(calculate(10,20,add));
+
+//! 8. Nested Function
+
+//* the function which is presenet inside another function is called a nested function
+
+function outer(){
+    console.log("This is outer function")
+
+    function inner(){
+        console.log('This is inner function')
+    }
+    inner()
+}
+outer()
+
+//! 9. Generator Function
+
+//* The generator function is a special type of fucntion which will pause and resume its execution
+
+//? yield -> pause the execution
+//? .next-> resume the execution and again pause it
+
+function* netflixSeries(){
+    yield "Episode 1"
+    yield "Episode 2"
+    yield "Episode 3"
+}
+
+let episode=netflixSeries();
+console.log(episode.next());
+console.log(episode.next());
+console.log(episode.next());
+console.log(episode.next());
+
+
 
 
