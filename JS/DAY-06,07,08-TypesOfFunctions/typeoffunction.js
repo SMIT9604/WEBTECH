@@ -7,9 +7,9 @@
 //* 4. Arrow Function
 //* 5. IIFE (Immediately Invoked Function Expression)
 //* 6. Callback Function
-//* 7. Nestwd Function
-//* 8. Generator Function
-//* 9. Higher Order Functio(HOF)
+//* 7. Nested Function
+//* 8. Generator 
+//* 9. Higher Order Functio(HOF)Function
 //* 10. Constructor Function
 //* 11. Function Currying
 
@@ -201,6 +201,10 @@ console.log(episode.next());
 console.log(episode.next());
 console.log(episode.next());
 console.log(episode.next());
+
+//! 10. Currying Function
+
+//* The technique of transforming a function that takes multiple arguments into a sequence of functions that each take a single argument is called currying.
 
 
 
