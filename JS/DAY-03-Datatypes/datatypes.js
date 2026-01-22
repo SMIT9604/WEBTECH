@@ -21,3 +21,4 @@ console.log("Datatypes in JS")
 //~ 5.undefined
 //~ 6.bigint
 //~ 7.symbol()
+

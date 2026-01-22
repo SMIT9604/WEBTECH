@@ -50,7 +50,7 @@ console.log(str2.includes("Script")); // true
 //* Return Type: string
 let str3 = "Hello, welcome to the world of JavaScript.";
 let slicedStr = str3.slice(31,-1);
-console.log(slicedStr); // welcome
+console.log(slicedStr); // Javascript
 
 //! 5. substring():
 //* It returns the part of the string between the start and end indexes, or to the end of the string.
@@ -144,7 +144,7 @@ console.log(paddedStrEnd); // "500"
 //* Return Type: boolean
 let str9 = "Hello, welcome to JavaScript.";
 console.log(str9.startsWith("Hello")); //true
-console.log(str9.startsWith("welcome", 15)); //false
+console.log(str9.startsWith("welcome", 7)); //true
 
 //! 17.endsWith():
 //* It checks whether a string ends with the characters of a specified string, returning true or false as appropriate.
@@ -211,8 +211,3 @@ console.log(getUserName("smit@123")
 )
 //! Create a function 'maskEmail' to mask email id with padend.
 
-function maskEmail(email){
-    let a=email.slice(0,email.lastIndexOf("@"))
-    return a.slice(0,2) + a.padEnd(a,'*')
-}
-console.log(maskEmail("smit@1234"))

@@ -207,5 +207,3 @@ console.log(episode.next());
 //* The technique of transforming a function that takes multiple arguments into a sequence of functions that each take a single argument is called currying.
 
 
-
-
