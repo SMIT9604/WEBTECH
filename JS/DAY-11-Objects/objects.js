@@ -30,4 +30,3 @@ let mobile=[
 ] ;
 
 console.log(Object.fromEntries(mobile));
-

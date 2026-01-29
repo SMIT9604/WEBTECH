@@ -45,6 +45,6 @@ console.log(userAge)
 
 function greetUser(userName){
     let greeting = userName ?? "Hello Guest";
-    console.log('Hello from ${greeting}');
+    console.log(`Hello from ${greeting}`);
 }
 greetUser('Smit')
