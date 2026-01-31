@@ -202,8 +202,6 @@ console.log(episode.next());
 console.log(episode.next());
 console.log(episode.next());
 
-//! 10. Currying Function
+//! 10. Currying Function:
 
 //* The technique of transforming a function that takes multiple arguments into a sequence of functions that each take a single argument is called currying.
-
-
